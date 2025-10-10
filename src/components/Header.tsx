@@ -31,18 +31,18 @@ export default function Header() {
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 z-40">
+            <header className="fixed top-0 left-0 right-0 z-50">
                 <div
                     className={
                         scrolled
-                            ? "bg-[linear-gradient(180deg,var(--clr-nav-from),var(--clr-nav-to))] text-white shadow"
+                            ? "bg-gradient-to-b from-[var(--clr-nav-from)] to-[var(--clr-nav-to)] text-white shadow"
                             : "bg-transparent text-white"
                     }
                 >
                     <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
                         <Link href="/" aria-label="Go to homepage" className="flex items-center gap-2">
                             <Image
-                                src="/logo.png"
+                                src="/logo.png"           // ensure the file is /public/logo.png (lowercase)
                                 alt="Logo"
                                 width={40}
                                 height={40}
@@ -50,6 +50,7 @@ export default function Header() {
                                 priority
                             />
                         </Link>
+
                         <nav className="flex gap-6 text-sm">
                             {nav.map((item) => (
                                 <Link
