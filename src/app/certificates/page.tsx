@@ -1,11 +1,21 @@
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
-type CertBlock = { org: string; logo: string; items: string[] };
+// Static imports ensure the build fails if a file is missing or misnamed
+import ibmLogo from "@/public/cert/ibm.png";
+import metaLogo from "@/public/cert/meta.png";
+import googleLogo from "@/public/cert/google.png";
+import bcgxLogo from "@/public/cert/bcg-x.png";
+import kaggleLogo from "@/public/cert/kaggle.png";
+import skyscannerLogo from "@/public/cert/skyscanner.png";
+import efsetLogo from "@/public/cert/efset.png";
+import canvaLogo from "@/public/cert/canva.png";
+
+type CertBlock = { org: string; logo: StaticImageData; items: string[] };
 
 const blocks: CertBlock[] = [
     {
         org: "IBM",
-        logo: "/ibm.png",
+        logo: ibmLogo,
         items: [
             "Building Generative AI-Powered Applications with Python",
             "Developing AI Applications with Python and Flask",
@@ -13,10 +23,10 @@ const blocks: CertBlock[] = [
             "Python for Data Science, AI & Development",
         ],
     },
-    { org: "Meta", logo: "/meta.png", items: ["Programming with JavaScript"] },
+    { org: "Meta", logo: metaLogo, items: ["Programming with JavaScript"] },
     {
         org: "Google",
-        logo: "/google.png",
+        logo: googleLogo,
         items: [
             "Assets, Threats, and Vulnerabilities",
             "Network Security",
@@ -25,11 +35,11 @@ const blocks: CertBlock[] = [
             "Google UX Design",
         ],
     },
-    { org: "BCG X", logo: "/BCD-X.png", items: ["GenAI", "Data Science"] },
-    { org: "kaggle", logo: "/kaggle.png", items: ["Machine Learning", "Python"] },
-    { org: "Skyscanner", logo: "/skyscanner.png", items: ["Front-end Software Engineering", "Software Engineering"] },
-    { org: "EF SET", logo: "/efset.png", items: ["English C2 Proficiency"] },
-    { org: "Canva", logo: "/canva.png", items: ["Graphic Design Essentials"] },
+    { org: "BCG X", logo: bcgxLogo, items: ["GenAI", "Data Science"] },
+    { org: "kaggle", logo: kaggleLogo, items: ["Machine Learning", "Python"] },
+    { org: "Skyscanner", logo: skyscannerLogo, items: ["Front-end Software Engineering", "Software Engineering"] },
+    { org: "EF SET", logo: efsetLogo, items: ["English C2 Proficiency"] },
+    { org: "Canva", logo: canvaLogo, items: ["Graphic Design Essentials"] },
 ];
 
 export default function CertificatesPage() {
@@ -47,11 +57,14 @@ export default function CertificatesPage() {
                                 width={120}
                                 height={50}
                                 className="object-contain"
+                                priority={b.org === "IBM"} // optional
                             />
                         </div>
 
                         <ul className="mt-4 list-disc pl-5 space-y-1">
-                            {b.items.map((t) => <li key={t}>{t}</li>)}
+                            {b.items.map((t) => (
+                                <li key={t}>{t}</li>
+                            ))}
                         </ul>
                     </section>
                 ))}
