@@ -42,7 +42,7 @@ export default function Header() {
                     <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
                         <Link href="/" aria-label="Go to homepage" className="flex items-center gap-2">
                             <Image
-                                src="/logo.png"           // ensure the file is /public/logo.png (lowercase)
+                                src="/Logo.png"           // ensure the file is /public/logo.png (lowercase)
                                 alt="Logo"
                                 width={40}
                                 height={40}

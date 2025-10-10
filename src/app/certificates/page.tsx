@@ -25,7 +25,7 @@ const blocks: CertBlock[] = [
             "Google UX Design",
         ],
     },
-    { org: "BCG X", logo: "/bcg-x.png", items: ["GenAI", "Data Science"] },
+    { org: "BCG X", logo: "/BCD-X.png", items: ["GenAI", "Data Science"] },
     { org: "kaggle", logo: "/kaggle.png", items: ["Machine Learning", "Python"] },
     { org: "Skyscanner", logo: "/skyscanner.png", items: ["Front-end Software Engineering", "Software Engineering"] },
     { org: "EF SET", logo: "/efset.png", items: ["English C2 Proficiency"] },

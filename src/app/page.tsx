@@ -15,7 +15,7 @@ export default function Home() {
                     {/* Logo */}
                     <div className="mt-8">
                         <Image
-                            src="/logo.png"  // make sure /public/logo.png exists
+                            src="/Logo.png"  // make sure /public/logo.png exists
                             alt="Amirali Sotoudeh Rad logo"
                             width={220}
                             height={220}
