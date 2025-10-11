@@ -6,7 +6,7 @@ export default function ArticlesPage() {
       title:
         "The Impact of AI and Social Media on Modern Relationships: Connection or Disconnection?",
       summary:
-        "How recommendation systems and always-on feeds reshape intimacy, attention, and conflict—and what we can do about it.",
+        "Social media and AI are reshaping how we form and maintain relationships, often blurring the line between real and virtual connections. While they offer new ways to bond, they also risk reducing empathy and authenticity in human interactions.",
       date: "October 2025",
       link: "#", // link to Medium, Dev.to, or your blog post
     },
