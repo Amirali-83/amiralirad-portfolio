@@ -16,7 +16,7 @@ const sections: Section[] = [
         heading: "Medical Projects",
         items: [
             { title: "Brain Tumor Detection from MRI", image: "/brain-MRI.jpg", github: "https://github.com/Amirali-83/Brain-Tumor-Detection-from-MRI" },
-            { title: "Heart-Attack-Prediction", image: "/heart.png", github: "https://github.com/Amirali-83/Heart-Attack-Prediction" },
+            { title: "Heart Attack Prediction", image: "/heart.png", github: "https://github.com/Amirali-83/Heart-Attack-Prediction" },
         ],
     },
     {
@@ -37,7 +37,7 @@ const sections: Section[] = [
         heading: "API Projects",
         items: [
             { title: "Stock Market", image: "/stock.png", github: "https://github.com/Amirali-83/stock-web" },
-            { title: "Airline-Reservation-System", image: "/flight.png", github: "https://github.com/Amirali-83/Airline-Reservation-System" },
+            { title: "Airline Reservation System", image: "/flight.png", github: "https://github.com/Amirali-83/Airline-Reservation-System" },
         ],
     },
 ];
