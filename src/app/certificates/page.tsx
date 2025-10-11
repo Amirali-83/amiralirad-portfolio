@@ -1,4 +1,5 @@
-// app/certificates/page.tsx (or wherever your route lives)
+// app/certificates/page.tsx
+import Image from "next/image";
 
 type CertBlock = { org: string; logo: string; items: string[] };
 
@@ -47,13 +48,14 @@ export default function CertificatesPage() {
                 {blocks.map((b) => (
                     <section key={b.org}>
                         <div className="flex items-center">
-                            <img
-                                src={b.logo} // served from /public
+                            <Image
+                                src={b.logo}           // from /public (Next adds basePath)
                                 alt={`${b.org} logo`}
                                 width={120}
                                 height={50}
-                                loading={b.org === "IBM" ? "eager" : "lazy"}
                                 className="object-contain"
+                                priority={b.org === "IBM"}
+                                unoptimized            // works with output: 'export' too
                             />
                         </div>
 
