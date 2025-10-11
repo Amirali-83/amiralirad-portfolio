@@ -1,4 +1,4 @@
-import Image, {StaticImageData} from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 // Static imports ensure the build fails if a file is missing or misnamed
 import ibmLogo from "@/public/cert/ibm.png";

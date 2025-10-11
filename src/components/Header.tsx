@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-// ← static import from /public (relative to src/components)
-import logo from 'amialirad/amiralirad-portfolio/public/logo.png';
+// ✅ static import — must exist exactly at /public/logo.png
+import logo from "../../public/logo.png";
 
 const nav = [
     { href: "/", label: "Home" },
@@ -20,12 +20,10 @@ const nav = [
 export default function Header() {
     const pathname = usePathname();
     const isHome = pathname === "/";
-
-    // If not on Home, start solid; on Home, start transparent then turn solid after scroll.
     const [scrolled, setScrolled] = useState(!isHome);
 
     useEffect(() => {
-        if (!isHome) return; // other pages stay solid
+        if (!isHome) return;
         const onScroll = () => setScrolled(window.scrollY > 8);
         onScroll();
         window.addEventListener("scroll", onScroll, { passive: true });
@@ -44,14 +42,8 @@ export default function Header() {
                 >
                     <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
                         <Link href="/" aria-label="Go to homepage" className="flex items-center gap-2">
-                            <Image
-                                src={logo}
-                                alt="logo"
-                                width={40}
-                                height={40}
-                                className="object-contain"
-                                priority
-                            />
+                            {/* With static imports, Next knows the intrinsic size. You can omit width/height. */}
+                            <Image src={logo} alt="logo" className="object-contain" priority />
                         </Link>
 
                         <nav className="flex gap-6 text-sm">
@@ -69,7 +61,6 @@ export default function Header() {
                 </div>
             </header>
 
-            {/* Spacer only on non-home pages so content isn't behind the fixed header */}
             {!isHome && <div aria-hidden className="h-16" />}
         </>
     );
