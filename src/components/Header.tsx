@@ -45,7 +45,7 @@ export default function Header() {
                     <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
                         <Link href="/" aria-label="Go to homepage" className="flex items-center gap-2">
                             <Image
-                                src={logo}             // ← uses the imported image
+                                src={logo}
                                 alt="logo"
                                 width={40}
                                 height={40}
