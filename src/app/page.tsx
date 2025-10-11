@@ -1,6 +1,6 @@
 // src/app/page.tsx
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link"; // Not used (safe to remove unless you need it elsewhere)
 
 export default function Home() {
   return (
@@ -47,6 +47,7 @@ export default function Home() {
 
               <div className="mt-6 text-sm">
                 <p className="font-medium text-zinc-700">Let’s be in Touch</p>
+
                 <div className="mt-3 flex gap-4 items-center">
                   {/* LinkedIn */}
                   <a
@@ -80,7 +81,7 @@ export default function Home() {
                     />
                   </a>
                 </div>
-            
+              </div>
             </div>
 
             {/* Right column */}
