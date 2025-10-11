@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-// ✅ static import from public (relative to src/components/Header.tsx)
-import logo from "../../public/logo.png";
+// ← static import from /public (relative to src/components)
+import logo from 'amialirad/amiralirad-portfolio/public/logo.png';
 
 const nav = [
     { href: "/", label: "Home" },
