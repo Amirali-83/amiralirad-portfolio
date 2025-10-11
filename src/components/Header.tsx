@@ -40,10 +40,21 @@ export default function Header() {
                             : "bg-transparent text-white"
                     }
                 >
-                    <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-                        <Link href="/" aria-label="Go to homepage" className="flex items-center gap-2">
-                            {/* With static imports, Next knows the intrinsic size. You can omit width/height. */}
-                            <Image src={logo} alt="logo" className="object-contain" priority />
+                    <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+                        <Link
+                            href="/"
+                            aria-label="Go to homepage"
+                            className="flex items-center gap-2"
+                        >
+                            {/* 🔧 Smaller logo size here */}
+                            <Image
+                                src={logo}
+                                alt="logo"
+                                width={100}     // adjust this size as needed
+                                height={40}
+                                className="object-contain"
+                                priority
+                            />
                         </Link>
 
                         <nav className="flex gap-6 text-sm">
