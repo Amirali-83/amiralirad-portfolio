@@ -32,9 +32,9 @@ export default function Home() {
 
       {/* DETAILS — light section below hero */}
       <section className="bg-[var(--clr-page)]">
-        {/* rounded top to separate from the hero; -mt creates a soft overlap */}
         <div className="mx-auto max-w-6xl px-4 pt-12 pb-20 -mt-6 rounded-t-3xl bg-[var(--clr-page)]">
           <div className="grid gap-10 md:grid-cols-2 items-start">
+            {/* Left column */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-zinc-800">Who am I?</h2>
 
@@ -56,7 +56,7 @@ export default function Home() {
                     className="hover:opacity-80 transition"
                   >
                     <Image
-                      src="/Linkedin.png" // must match /public file name exactly (case-sensitive)
+                      src="/Linkedin.png" // make sure file name matches exactly
                       alt="LinkedIn"
                       width={60}
                       height={60}
@@ -72,7 +72,7 @@ export default function Home() {
                     className="hover:opacity-80 transition"
                   >
                     <Image
-                      src="/GitHub.png" // must match /public file name exactly
+                      src="/GitHub.png" // case-sensitive — must match file name
                       alt="GitHub"
                       width={60}
                       height={60}
@@ -83,6 +83,7 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Right column */}
             <div className="justify-self-center">
               <Image
                 src="/IT-MAN.png"
