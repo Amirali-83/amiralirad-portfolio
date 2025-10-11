@@ -1,41 +1,45 @@
+// src/app/articles/page.tsx
+
 export default function ArticlesPage() {
-    const articles = [
-        {
-            title: "The Impact of AI and Social Media on Modern Relationships: Connection or
-Disconnection?",
-            
-            date: "October 2025",
-            link: "#", // link to Medium, Dev.to, or your blog post
-        },
-    
-    ];
+  const articles = [
+    {
+      title:
+        "The Impact of AI and Social Media on Modern Relationships: Connection or Disconnection?",
+      summary:
+        "How recommendation systems and always-on feeds reshape intimacy, attention, and conflict—and what we can do about it.",
+      date: "October 2025",
+      link: "#", // link to Medium, Dev.to, or your blog post
+    },
+  ];
 
-    return (
-        <main className="max-w-3xl mx-auto px-4 py-12">
-            <h1 className="text-2xl font-bold">Articles</h1>
-            <p className="mt-2 text-gray-700">
-                Article I’ve written about AI and social media effects on relationships. 
-            </p>
+  return (
+    <main className="max-w-3xl mx-auto px-4 py-12">
+      <h1 className="text-2xl font-bold">Articles</h1>
+      <p className="mt-2 text-gray-700">
+        Article I’ve written about AI and social media effects on relationships.
+      </p>
 
-            <ul className="mt-6 space-y-6">
-                {articles.map((article, index) => (
-                    <li key={index} className="border rounded-lg p-4">
-                        <h2 className="text-xl font-semibold">{article.title}</h2>
-                        <p className="mt-2 text-gray-700">{article.summary}</p>
-                        <p className="mt-1 text-sm text-gray-500">{article.date}</p>
-                        {article.link && (
-                            <a
-                                href={article.link}
-                                className="inline-block mt-3 underline text-sm"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Read Article →
-                            </a>
-                        )}
-                    </li>
-                ))}
-            </ul>
-        </main>
-    );
+      <ul className="mt-6 space-y-6">
+        {articles.map((article, index) => (
+          <li key={index} className="border rounded-lg p-4">
+            <h2 className="text-xl font-semibold">{article.title}</h2>
+            {article.summary && (
+              <p className="mt-2 text-gray-700">{article.summary}</p>
+            )}
+            <p className="mt-1 text-sm text-gray-500">{article.date}</p>
+            {article.link && (
+              <a
+                href={article.link}
+                className="inline-block mt-3 underline text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read Article →
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
 }
