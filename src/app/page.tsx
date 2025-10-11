@@ -9,7 +9,7 @@ export default function Home() {
             <section className="bg-[linear-gradient(180deg,var(--clr-nav-from),var(--clr-nav-to))] text-white">
                 <div className="mx-auto max-w-6xl px-4 min-h-screen flex flex-col items-center justify-center text-center pt-20">
                     <p className="text-xl sm:text-2xl text-[color:var(--clr-accent)]">
-                        TTHE BEAUTY OF STRUCTURE, THE CHAOS OF CREATION
+                        THE BEAUTY OF STRUCTURE, THE CHAOS OF CREATION
                     </p>
 
                     {/* Logo */}
@@ -40,9 +40,8 @@ export default function Home() {
                         <div>
                             <h2 className="text-2xl font-bold mb-4 text-zinc-800">Who am I?</h2>
                             <p className="text-lg leading-relaxed text-zinc-800">
-                                My name is Amirali Sotoudeh Rad. I’m a software engineer student at UE University
-                                and an intern at ESMT Berlin. I’m passionate about AI/ML, UI/UX, and Networking.
-                            </p>
+                                Hi, my name is Amirali Sotoudeh Rad. I’m a Software Engineering student at the University of Europe for Applied Sciences
+                                and a Digital Enablement intern at ESMT Berlin. I am passionate about computer networking, UI/UX, and Artificial intelligence, with a strong focus on solving complex challenges through technology. 
 
                             <div className="mt-6 text-sm">
                                 <p className="font-medium text-zinc-700">Let’s be in Touch</p>
