@@ -1,14 +1,15 @@
 import Image, { StaticImageData } from "next/image";
 
-// Static imports ensure the build fails if a file is missing or misnamed
-import ibmLogo from "@/public/cert/ibm.png";
-import metaLogo from "@/public/cert/meta.png";
-import googleLogo from "@/public/cert/google.png";
-import bcgxLogo from "@/public/cert/bcg-x.png";
-import kaggleLogo from "@/public/cert/kaggle.png";
-import skyscannerLogo from "@/public/cert/skyscanner.png";
-import efsetLogo from "@/public/cert/efset.png";
-import canvaLogo from "@/public/cert/canva.png";
+// ✅ Use RELATIVE PATHS, not "@/public"
+// This assumes your images are in: /public/cert/
+import ibmLogo from "../../../public/cert/ibm.png";
+import metaLogo from "../../../public/cert/meta.png";
+import googleLogo from "../../../public/cert/google.png";
+import bcgxLogo from "../../../public/cert/bcg-x.png";
+import kaggleLogo from "../../../public/cert/kaggle.png";
+import skyscannerLogo from "../../../public/cert/skyscanner.png";
+import efsetLogo from "../../../public/cert/efset.png";
+import canvaLogo from "../../../public/cert/canva.png";
 
 type CertBlock = { org: string; logo: StaticImageData; items: string[] };
 
@@ -45,7 +46,9 @@ const blocks: CertBlock[] = [
 export default function CertificatesPage() {
     return (
         <main className="max-w-6xl mx-auto px-4 py-12">
-            <h1 className="text-3xl font-extrabold text-center text-zinc-800">My Certificates</h1>
+            <h1 className="text-3xl font-extrabold text-center text-zinc-800">
+                My Certificates
+            </h1>
 
             <div className="mt-10 grid md:grid-cols-2 gap-x-16 gap-y-12">
                 {blocks.map((b) => (
