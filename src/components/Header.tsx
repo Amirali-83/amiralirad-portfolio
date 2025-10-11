@@ -50,8 +50,8 @@ export default function Header() {
                             <Image
                                 src={logo}
                                 alt="logo"
-                                width={100}     // adjust this size as needed
-                                height={40}
+                                width={90}     // adjust this size as needed
+                                height={30}
                                 className="object-contain"
                                 priority
                             />
