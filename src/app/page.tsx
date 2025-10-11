@@ -15,8 +15,8 @@ export default function Home() {
                     {/* Logo */}
                     <div className="mt-8">
                         <Image
-                            src="/Logo.png"  // make sure /public/logo.png exists
-                            alt="Amirali Sotoudeh Rad logo"
+                            src="/logo.png"  // make sure /public/logo.png exists
+                            alt="ASR logo"
                             width={220}
                             height={220}
                             className="object-contain drop-shadow"
