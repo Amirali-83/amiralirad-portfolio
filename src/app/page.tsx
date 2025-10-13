@@ -46,7 +46,7 @@ export default function Home() {
               </p>
 
               <div className="mt-6 text-sm">
-                <p className="font-medium text-zinc-700">Let’s be in Touch</p>
+                <p className="font-medium text-zinc-700">Get in Touch</p>
                 <div className="mt-3 flex gap-4 items-center">
                   {/* LinkedIn */}
                   <a
