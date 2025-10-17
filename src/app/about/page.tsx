@@ -3,37 +3,41 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-extrabold text-center text-zinc-800">About Me</h1>
+  <h1 className="text-3xl font-extrabold text-center text-zinc-800">About Me</h1>
 
-      {/* Experience + photo */}
-      <section className="mt-10 grid md:grid-cols-2 gap-10 items-start">
-        {/* Left side: Experience + Education */}
-        <div>
-          {/* Experience Section */}
-          <h2 className="text-xl font-bold">Experience</h2>
-          <ul className="mt-4 space-y-4 text-lg">
-            <li>
-              <div className="font-semibold">Digital Enablement – ESMT Berlin</div>
-              <div className="text-gray-600 text-base">Oct 2025 – Present</div>
-            </li>
-            <li>
-              <div className="font-semibold">Web Developer – Pamiral GmbH</div>
-              <div className="text-gray-600 text-base">May 2025 – July 2025</div>
-            </li>
-          </ul>
+  {/* Experience + photo */}
+  <section className="mt-10 grid md:grid-cols-2 gap-10 items-start">
+    {/* Left side: Experience + Education */}
+    <div>
+      {/* Experience Section */}
+      <h2 className="text-xl font-bold">Experience</h2>
+      <ul className="mt-4 space-y-4 text-lg">
+        <li>
+          <div className="font-semibold">Digital Enablement – ESMT Berlin</div>
+          <div className="text-gray-600 text-base">Oct 2025 – Present</div>
+          <div className="text-gray-500 text-sm">Berlin, Germany</div>
+        </li>
+        <li>
+          <div className="font-semibold">Web Developer – Pamiral GmbH</div>
+          <div className="text-gray-600 text-base">May 2025 – July 2025</div>
+          <div className="text-gray-500 text-sm">Hamburg, Germany</div>
+        </li>
+      </ul>
 
-          {/* Education Section */}
-          <h2 className="text-xl font-bold mt-10">Education</h2>
-          <ul className="mt-4 space-y-4 text-lg">
-            <li>
-              <div className="font-semibold">
-                BSc Software Engineering – University of Europe for Applied Sciences
-              </div>
-              <div className="text-gray-600 text-base">Oct 2023 – Aug 2026</div>
-              <div className="text-gray-600 text-base">Grade: 1.7</div>
-            </li>
-          </ul>
-        </div>
+      {/* Education Section */}
+      <h2 className="text-xl font-bold mt-10">Education</h2>
+      <ul className="mt-4 space-y-4 text-lg">
+        <li>
+          <div className="font-semibold">
+            BSc Software Engineering – University of Europe for Applied Sciences
+          </div>
+          <div className="text-gray-600 text-base">Oct 2023 – Aug 2026</div>
+          <div className="text-gray-500 text-sm">Potsdam, Germany</div>
+          <div className="text-gray-600 text-base">Grade: 1.7</div>
+        </li>
+      </ul>
+    </div>
+
 
         {/* Right side: Image */}
         <div className="justify-self-center">
