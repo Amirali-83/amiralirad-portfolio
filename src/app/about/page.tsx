@@ -117,7 +117,7 @@ export default function AboutPage() {
       <li>Software Quality Assurance</li>
       <li>UI/UX</li>
       <li>Data Analysis</li>
-      <li>Agile Methodology (Scrum, Jira)</li>
+      <li>Agile Methodology</li>
     </ul>
   </div>
 
