@@ -1,19 +1,45 @@
 // src/app/page.tsx
+"use client"; // ← needed for Framer Motion on the client
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion"; // ← add this
+
+// Small animation variants (kept here to avoid touching other files)
+const hero = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, ease: "easeOut" },
+  },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 12 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-none">
       {/* HERO — fills first viewport; header floats above */}
       <section className="bg-[linear-gradient(180deg,var(--clr-nav-from),var(--clr-nav-to))] text-white">
-        <div className="mx-auto max-w-6xl px-4 min-h-screen flex flex-col items-center justify-center text-center pt-20">
-          <p className="text-xl sm:text-2xl text-[color:var(--clr-accent)]">
+        {/* ⬇️ Only this container and its three children are motion-ized */}
+        <motion.div
+          className="mx-auto max-w-6xl px-4 min-h-screen flex flex-col items-center justify-center text-center pt-20"
+          variants={hero}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.p
+            className="text-xl sm:text-2xl text-[color:var(--clr-accent)]"
+            variants={fadeUp}
+          >
             THE BEAUTY OF STRUCTURE, THE CHAOS OF CREATION
-          </p>
+          </motion.p>
 
           {/* Logo */}
-          <div className="mt-8">
+          <motion.div className="mt-8" variants={fadeUp}>
             <Image
               src="/logo.png" // make sure /public/logo.png exists (case-sensitive)
               alt="ASR logo"
@@ -22,12 +48,15 @@ export default function Home() {
               className="object-contain drop-shadow"
               priority
             />
-          </div>
+          </motion.div>
 
-          <h1 className="mt-8 text-3xl sm:text-4xl font-extrabold tracking-wide">
+          <motion.h1
+            className="mt-8 text-3xl sm:text-4xl font-extrabold tracking-wide text-[color:var(--clr-accent)]"
+            variants={fadeUp}
+          >
             AMIRALI SOTOUDEH RAD
-          </h1>
-        </div>
+          </motion.h1>
+        </motion.div>
       </section>
 
       {/* DETAILS — light section below hero */}
