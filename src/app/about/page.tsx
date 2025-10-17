@@ -45,48 +45,46 @@ export default function AboutPage() {
             className="rounded-md shadow object-cover"
           />
         </div>
-      </section>
-
       {/* Skills */}
-<section className="mt-14 grid md:grid-cols-4 gap-6 items-start">
+<section className="mt-14 grid md:grid-cols-4 gap-x-12 gap-y-10 items-start">
   {/* Coding Skills */}
   <div>
     <h3 className="text-lg font-bold mb-3">Coding Skills</h3>
-    <div className="flex flex-wrap gap-2 items-center">
+    <div className="flex items-center gap-3 flex-wrap sm:flex-wrap lg:flex-nowrap overflow-x-auto lg:overflow-visible">
       <Image
         src="/python.jpg"
         alt="Python"
-        width={55}
-        height={55}
-        className="object-contain hover:scale-105 transition-transform"
+        width={50}
+        height={50}
+        className="object-contain shrink-0 hover:scale-105 transition-transform"
       />
       <Image
         src="/Js.png"
         alt="JavaScript"
-        width={55}
-        height={55}
-        className="object-contain hover:scale-105 transition-transform"
+        width={50}
+        height={50}
+        className="object-contain shrink-0 hover:scale-105 transition-transform"
       />
       <Image
         src="/java.png"
         alt="Java"
-        width={55}
-        height={55}
-        className="object-contain hover:scale-105 transition-transform"
+        width={50}
+        height={50}
+        className="object-contain shrink-0 hover:scale-105 transition-transform"
       />
       <Image
         src="/php.png"
         alt="PHP"
-        width={55}
-        height={55}
-        className="object-contain hover:scale-105 transition-transform"
+        width={50}
+        height={50}
+        className="object-contain shrink-0 hover:scale-105 transition-transform"
       />
       <Image
         src="/HTML-CSS.jpg"
         alt="HTML & CSS"
-        width={55}
-        height={55}
-        className="object-contain hover:scale-105 transition-transform rounded-md"
+        width={50}
+        height={50}
+        className="object-contain shrink-0 hover:scale-105 transition-transform rounded-md"
       />
     </div>
   </div>
@@ -94,7 +92,7 @@ export default function AboutPage() {
   {/* Tech Skills */}
   <div>
     <h3 className="text-lg font-bold mb-3">Tech Skills</h3>
-    <ul className="list-disc list-inside text-zinc-700 space-y-1">
+    <ul className="list-disc list-outside pl-4 text-zinc-700 space-y-1">
       <li>Machine Learning</li>
       <li>Artificial Intelligence</li>
       <li>Figma / Canva</li>
@@ -109,7 +107,7 @@ export default function AboutPage() {
   {/* Soft Skills */}
   <div>
     <h3 className="text-lg font-bold mb-3">Soft Skills</h3>
-    <ul className="list-disc list-inside text-zinc-700 space-y-1">
+    <ul className="list-disc list-outside pl-4 text-zinc-700 space-y-1">
       <li>Teamwork</li>
       <li>Collaboration</li>
       <li>Problem Solving</li>
@@ -123,7 +121,7 @@ export default function AboutPage() {
   {/* Languages */}
   <div>
     <h3 className="text-lg font-bold mb-3">Languages</h3>
-    <ul className="list-disc list-inside text-zinc-700 space-y-1">
+    <ul className="list-disc list-outside pl-4 text-zinc-700 space-y-1">
       <li>English</li>
       <li>German</li>
       <li>Persian</li>
@@ -131,6 +129,7 @@ export default function AboutPage() {
     </ul>
   </div>
 </section>
+
 
     </main>
   );
