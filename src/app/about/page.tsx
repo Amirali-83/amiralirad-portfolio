@@ -120,3 +120,7 @@ export default function AboutPage() {
     </ul>
   </div>
 </section>
+
+            </main>
+  );
+}
