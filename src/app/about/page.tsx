@@ -9,17 +9,32 @@ export default function AboutPage() {
             <section className="mt-10 grid md:grid-cols-2 gap-10 items-start">
                 {/* Left side: Experience + Education */}
                 <div>
-                    <h2 className="text-xl font-bold">Experience</h2>
-                    <ul className="mt-4 space-y-2 text-lg">
-                        <li>Digital Enablement – ESMT Berlin</li>
-                        <li>Web Developer – Pamiral GmbH</li>
-                    </ul>
+  {/* Experience Section */}
+  <h2 className="text-xl font-bold">Experience</h2>
+  <ul className="mt-4 space-y-4 text-lg">
+    <li>
+      <div className="font-semibold">Digital Enablement – ESMT Berlin</div>
+      <div className="text-gray-600 text-base">Oct 2025 – Present</div>
+    </li>
+    <li>
+      <div className="font-semibold">Web Developer – Pamiral GmbH</div>
+      <div className="text-gray-600 text-base">May 2025 – July 2025</div>
+    </li>
+  </ul>
 
-                    <h2 className="text-xl font-bold mt-10">Education</h2>
-                    <ul className="mt-4 space-y-2 text-lg">
-                        <li>BSc Software Engineering – University of Europe for Applied Sciences</li>
-                    </ul>
-                </div>
+  {/* Education Section */}
+  <h2 className="text-xl font-bold mt-10">Education</h2>
+  <ul className="mt-4 space-y-4 text-lg">
+    <li>
+      <div className="font-semibold">
+        BSc Software Engineering – University of Europe for Applied Sciences
+      </div>
+      <div className="text-gray-600 text-base">Oct 2023 – Aug 2026</div>
+      <div className="text-gray-600 text-base">Grade: 1.7</div>
+    </li>
+  </ul>
+</div>
+
 
                 {/* Right side: Image */}
                 <div className="justify-self-center">
