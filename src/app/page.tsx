@@ -1,5 +1,6 @@
 // src/app/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
           {/* Logo */}
           <div className="mt-8">
             <Image
-              src="/logo.png" // ensure /public/logo.png exists (case-sensitive)
+              src="/logo.png" // make sure /public/logo.png exists (case-sensitive)
               alt="ASR logo"
               width={220}
               height={220}
@@ -56,7 +57,7 @@ export default function Home() {
                     className="hover:opacity-80 transition"
                   >
                     <Image
-                      src="/Linkedin.png" // case-sensitive — must match file name
+                      src="/Linkedin.png" // make sure file name matches exactly
                       alt="LinkedIn"
                       width={60}
                       height={60}
