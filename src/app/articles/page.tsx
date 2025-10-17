@@ -21,7 +21,7 @@ export default function ArticlesPage() {
       ],
     },
   ];
-  
+
   return (
     <main className="max-w-3xl mx-auto px-4 py-12">
       <h1 className="text-2xl font-bold">Articles</h1>
@@ -31,14 +31,39 @@ export default function ArticlesPage() {
 
       <ul className="mt-6 space-y-6">
         {articles.map((article, index) => (
-          <li key={index} className="border rounded-lg p-4">
-            <h2 className="text-xl font-semibold">{article.title}</h2>
+          <li
+            key={index}
+            className="border rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow bg-white"
+          >
+            <h2 className="text-xl font-semibold text-zinc-800">
+              {article.title}
+            </h2>
 
             {article.summary && (
               <p className="mt-2 text-gray-700">{article.summary}</p>
             )}
 
-            <p className="mt-1 text-sm text-gray-500">{article.date}</p>
+            <p className="mt-2 text-sm text-gray-500">{article.date}</p>
+
+            {/* Publication Links */}
+            {article.publishedLinks && (
+              <p className="mt-1 text-sm text-gray-600">
+                Published on{" "}
+                {article.publishedLinks.map((site, i) => (
+                  <span key={i}>
+                    <a
+                      href={site.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 underline"
+                    >
+                      {site.name}
+                    </a>
+                    {i < article.publishedLinks.length - 1 && " and "}
+                  </span>
+                ))}
+              </p>
+            )}
 
             {article.link && (
               <a
