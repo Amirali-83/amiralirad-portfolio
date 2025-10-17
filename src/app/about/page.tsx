@@ -122,7 +122,7 @@ export default function AboutPage() {
         </div>
           {/* Languges */}
         <div>
-          <h3 className="text-lg font-bold mb-3">Tech Skills</h3>
+          <h3 className="text-lg font-bold mb-3">Languges</h3>
           <ul className="list-disc list-inside text-zinc-700">
             <li>English</li>
             <li>German</li>
