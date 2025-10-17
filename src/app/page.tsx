@@ -8,7 +8,7 @@ export default function Home() {
       {/* HERO — fills first viewport; header floats above */}
       <section className="bg-[linear-gradient(180deg,var(--clr-nav-from),var(--clr-nav-to))] text-white">
         <div className="mx-auto max-w-6xl px-4 min-h-screen flex flex-col items-center justify-center text-center pt-20">
-          <p className="text-xl sm:text-2xl text-[color:var(--clr-accent)]">
+          <p className="text-xl sm:text-2xl font-bold text-[color:var(--clr-accent)]">
             THE BEAUTY OF STRUCTURE, THE CHAOS OF CREATION
           </p>
 
