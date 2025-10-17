@@ -50,61 +50,73 @@ export default function AboutPage() {
 
 
             {/* Skills */}
-            <section className="mt-14 grid md:grid-cols-2 gap-10">
-                {/* Coding Skills */}
-                <div>
-                    <h3 className="text-lg font-bold mb-3">Coding Skills</h3>
-                    <div className="flex flex-wrap gap-4 items-center">
-                        <Image
-                            src="/python.jpg"
-                            alt="Python"
-                            width={60}
-                            height={60}
-                            className="object-contain hover:scale-105 transition-transform"
-                        />
-                        <Image
-                            src="/Js.png"
-                            alt="JavaScript"
-                            width={60}
-                            height={60}
-                            className="object-contain hover:scale-105 transition-transform"
-                        />
-                        <Image
-                            src="/java.png"
-                            alt="Java"
-                            width={60}
-                            height={60}
-                            className="object-contain hover:scale-105 transition-transform"
-                        />
-                        <Image
-                            src="/php.png"
-                            alt="PHP"
-                            width={60}
-                            height={60}
-                            className="object-contain hover:scale-105 transition-transform"
-                        />
-                        <Image
-                            src="/HTML-CSS.jpg"
-                            alt="HTML & CSS"
-                            width={60}
-                            height={60}
-                            className="object-contain hover:scale-105 transition-transform rounded-md"
-                        />
-                    </div>
-                </div>
+<section className="mt-14 grid md:grid-cols-3 gap-10">
+  {/* Coding Skills */}
+  <div>
+    <h3 className="text-lg font-bold mb-3">Coding Skills</h3>
+    <div className="flex flex-wrap gap-4 items-center">
+      <Image
+        src="/python.jpg"
+        alt="Python"
+        width={60}
+        height={60}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/Js.png"
+        alt="JavaScript"
+        width={60}
+        height={60}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/java.png"
+        alt="Java"
+        width={60}
+        height={60}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/php.png"
+        alt="PHP"
+        width={60}
+        height={60}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/HTML-CSS.jpg"
+        alt="HTML & CSS"
+        width={60}
+        height={60}
+        className="object-contain hover:scale-105 transition-transform rounded-md"
+      />
+    </div>
+  </div>
 
-                {/* Soft Skills (keep as text or icons if you want later) */}
-                <div>
-                    <h3 className="text-lg font-bold mb-3">Soft Skills</h3>
-                    <ul className="list-disc list-inside text-zinc-700">
-                        <li>Teamwork</li>
-                        <li>Problem Solving</li>
-                        <li>Adaptability</li>
-                        <li>Communication</li>
-                    </ul>
-                </div>
-            </section>
+  {/* Tech Skills */}
+  <div>
+    <h3 className="text-lg font-bold mb-3">Tech Skills</h3>
+    <ul className="list-disc list-inside text-zinc-700">
+      <li>Machine Learning</li>
+      <li>Artificial Intelligence</li>
+      <li>Figma / Canva</li>
+      <li>CI/CD</li>
+      <li>Software Quality Assurance</li>
+      <li>UI/UX</li>
+      <li>Data Analysis</li>
+      <li>Agile Methodology (Scrum, Jira)</li>
+    </ul>
+  </div>
 
-        </main>
-    );
-}
+  {/* Soft Skills */}
+  <div>
+    <h3 className="text-lg font-bold mb-3">Soft Skills</h3>
+    <ul className="list-disc list-inside text-zinc-700">
+      <li>Teamwork</li>
+      <li>Problem Solving</li>
+      <li>Adaptability</li>
+      <li>Communication</li>
+      <li>Time Management</li>
+    </ul>
+  </div>
+</section>
