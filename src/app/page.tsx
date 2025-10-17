@@ -1,62 +1,33 @@
 // src/app/page.tsx
-"use client"; // ← needed for Framer Motion on the client
-
 import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion"; // ← add this
-
-// Small animation variants (kept here to avoid touching other files)
-const hero = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.15, ease: "easeOut" },
-  },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 12 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-none">
       {/* HERO — fills first viewport; header floats above */}
       <section className="bg-[linear-gradient(180deg,var(--clr-nav-from),var(--clr-nav-to))] text-white">
-        {/* ⬇️ Only this container and its three children are motion-ized */}
-        <motion.div
-          className="mx-auto max-w-6xl px-4 min-h-screen flex flex-col items-center justify-center text-center pt-20"
-          variants={hero}
-          initial="hidden"
-          animate="show"
-        >
-          <motion.p
-            className="text-xl sm:text-2xl text-[color:var(--clr-accent)]"
-            variants={fadeUp}
-          >
+        <div className="mx-auto max-w-6xl px-4 min-h-screen flex flex-col items-center justify-center text-center pt-20">
+          <p className="text-xl sm:text-2xl text-[color:var(--clr-accent)]">
             THE BEAUTY OF STRUCTURE, THE CHAOS OF CREATION
-          </motion.p>
+          </p>
 
           {/* Logo */}
-          <motion.div className="mt-8" variants={fadeUp}>
+          <div className="mt-8">
             <Image
-              src="/logo.png" // make sure /public/logo.png exists (case-sensitive)
+              src="/logo.png" // ensure /public/logo.png exists (case-sensitive)
               alt="ASR logo"
               width={220}
               height={220}
               className="object-contain drop-shadow"
               priority
             />
-          </motion.div>
+          </div>
 
-          <motion.h1
-            className="mt-8 text-3xl sm:text-4xl font-extrabold tracking-wide text-[color:var(--clr-accent)]"
-            variants={fadeUp}
-          >
+          {/* Name */}
+          <h1 className="mt-8 text-3xl sm:text-4xl font-extrabold tracking-wide text-[color:var(--clr-accent)]">
             AMIRALI SOTOUDEH RAD
-          </motion.h1>
-        </motion.div>
+          </h1>
+        </div>
       </section>
 
       {/* DETAILS — light section below hero */}
@@ -85,7 +56,7 @@ export default function Home() {
                     className="hover:opacity-80 transition"
                   >
                     <Image
-                      src="/Linkedin.png" // make sure file name matches exactly
+                      src="/Linkedin.png" // case-sensitive — must match file name
                       alt="LinkedIn"
                       width={60}
                       height={60}
