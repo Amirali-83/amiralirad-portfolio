@@ -48,59 +48,90 @@ export default function AboutPage() {
       </section> {/* <-- this was missing */}
 
       {/* Skills */}
-      <section className="mt-14 grid md:grid-cols-4 gap-x-12 gap-y-10 items-start">
-        {/* Coding Skills */}
-        <div>
-          <h3 className="text-lg font-bold mb-3">Coding Skills</h3>
-          <div className="flex items-center gap-3 flex-wrap sm:flex-wrap lg:flex-nowrap overflow-x-auto lg:overflow-visible">
-            <Image src="/python.jpg" alt="Python" width={50} height={50} className="object-contain shrink-0 hover:scale-105 transition-transform" />
-            <Image src="/Js.png" alt="JavaScript" width={50} height={50} className="object-contain shrink-0 hover:scale-105 transition-transform" />
-            <Image src="/java.png" alt="Java" width={50} height={50} className="object-contain shrink-0 hover:scale-105 transition-transform" />
-            <Image src="/php.png" alt="PHP" width={50} height={50} className="object-contain shrink-0 hover:scale-105 transition-transform" />
-            <Image src="/HTML-CSS.jpg" alt="HTML & CSS" width={50} height={50} className="object-contain shrink-0 hover:scale-105 transition-transform rounded-md" />
-          </div>
-        </div>
+<section className="mt-14 grid md:grid-cols-4 gap-x-10 items-start">
+  {/* Coding Skills */}
+  <div>
+    <h3 className="text-lg font-bold mb-3">Coding Skills</h3>
+    <div className="flex items-center justify-start gap-3 flex-nowrap overflow-x-auto">
+      <Image
+        src="/python.jpg"
+        alt="Python"
+        width={48}
+        height={48}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/Js.png"
+        alt="JavaScript"
+        width={48}
+        height={48}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/java.png"
+        alt="Java"
+        width={48}
+        height={48}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/php.png"
+        alt="PHP"
+        width={48}
+        height={48}
+        className="object-contain hover:scale-105 transition-transform"
+      />
+      <Image
+        src="/HTML-CSS.jpg"
+        alt="HTML & CSS"
+        width={48}
+        height={48}
+        className="object-contain hover:scale-105 transition-transform rounded-md"
+      />
+    </div>
+  </div>
 
-        {/* Tech Skills */}
-        <div>
-          <h3 className="text-lg font-bold mb-3">Tech Skills</h3>
-          <ul className="list-disc list-outside pl-4 text-zinc-700 space-y-1">
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Figma / Canva</li>
-            <li>CI/CD</li>
-            <li>Software Quality Assurance</li>
-            <li>UI/UX</li>
-            <li>Data Analysis</li>
-            <li>Agile Methodology (Scrum, Jira)</li>
-          </ul>
-        </div>
+  {/* Tech Skills */}
+  <div>
+    <h3 className="text-lg font-bold mb-3">Tech Skills</h3>
+    <ul className="list-disc pl-5 text-zinc-700 space-y-1">
+      <li>Machine Learning</li>
+      <li>Artificial Intelligence</li>
+      <li>Figma / Canva</li>
+      <li>CI/CD</li>
+      <li>Software Quality Assurance</li>
+      <li>UI/UX</li>
+      <li>Data Analysis</li>
+      <li>Agile Methodology (Scrum, Jira)</li>
+    </ul>
+  </div>
 
-        {/* Soft Skills */}
-        <div>
-          <h3 className="text-lg font-bold mb-3">Soft Skills</h3>
-          <ul className="list-disc list-outside pl-4 text-zinc-700 space-y-1">
-            <li>Teamwork</li>
-            <li>Collaboration</li>
-            <li>Problem Solving</li>
-            <li>Adaptability</li>
-            <li>Communication</li>
-            <li>Time Management</li>
-            <li>Quick Learning</li>
-          </ul>
-        </div>
+  {/* Soft Skills */}
+  <div>
+    <h3 className="text-lg font-bold mb-3">Soft Skills</h3>
+    <ul className="list-disc pl-5 text-zinc-700 space-y-1">
+      <li>Teamwork</li>
+      <li>Collaboration</li>
+      <li>Problem Solving</li>
+      <li>Adaptability</li>
+      <li>Communication</li>
+      <li>Time Management</li>
+      <li>Quick Learning</li>
+    </ul>
+  </div>
 
-        {/* Languages */}
-        <div>
-          <h3 className="text-lg font-bold mb-3">Languages</h3>
-          <ul className="list-disc list-outside pl-4 text-zinc-700 space-y-1">
-            <li>English</li>
-            <li>German</li>
-            <li>Persian</li>
-            <li>Turkish</li>
-          </ul>
-        </div>
-      </section>
+  {/* Languages */}
+  <div>
+    <h3 className="text-lg font-bold mb-3">Languages</h3>
+    <ul className="list-disc pl-5 text-zinc-700 space-y-1">
+      <li>English</li>
+      <li>German</li>
+      <li>Persian</li>
+      <li>Turkish</li>
+    </ul>
+  </div>
+</section>
+
     </main>
   );
 }
