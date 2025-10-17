@@ -7,12 +7,21 @@ export default function ArticlesPage() {
         "The Impact of AI and Social Media on Modern Relationships: Connection or Disconnection?",
       summary:
         "Social media and AI are reshaping how we form and maintain relationships, often blurring the line between real and virtual connections. While they offer new ways to bond, they also risk reducing empathy and authenticity in human interactions.",
-      published: Medium - Linkedin
       date: "October 2025",
       link: "/article.pdf", // ✅ points to /public/article.pdf
+      publishedLinks: [
+        {
+          name: "Medium",
+          url: "https://medium.com/@amirali.sotoudeh/the-impact-of-ai-social-media-on-modern-relationships-connection-or-disconnection-16d29c12dd80",
+        },
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/pulse/impact-ai-social-media-modern-relationships-amirali-sotoudeh-rad-hqzre",
+        },
+      ],
     },
   ];
-
+  
   return (
     <main className="max-w-3xl mx-auto px-4 py-12">
       <h1 className="text-2xl font-bold">Articles</h1>
