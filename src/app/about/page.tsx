@@ -52,42 +52,57 @@ export default function AboutPage() {
   {/* Coding Skills */}
   <div>
     <h3 className="text-lg font-bold mb-3">Coding Skills</h3>
-    <div className="flex items-center justify-start gap-3 flex-nowrap overflow-x-auto">
-      <Image
-        src="/python.jpg"
-        alt="Python"
-        width={48}
-        height={48}
-        className="object-contain hover:scale-105 transition-transform"
-      />
-      <Image
-        src="/Js.png"
-        alt="JavaScript"
-        width={48}
-        height={48}
-        className="object-contain hover:scale-105 transition-transform"
-      />
-      <Image
-        src="/java.png"
-        alt="Java"
-        width={48}
-        height={48}
-        className="object-contain hover:scale-105 transition-transform"
-      />
-      <Image
-        src="/php.png"
-        alt="PHP"
-        width={48}
-        height={48}
-        className="object-contain hover:scale-105 transition-transform"
-      />
-      <Image
-        src="/HTML-CSS.jpg"
-        alt="HTML & CSS"
-        width={48}
-        height={48}
-        className="object-contain hover:scale-105 transition-transform rounded-md"
-      />
+    <div className="flex flex-col items-start gap-3">
+      <div className="flex items-center gap-3">
+        <Image
+          src="/python.jpg"
+          alt="Python"
+          width={55}
+          height={55}
+          className="object-contain hover:scale-105 transition-transform"
+        />
+        <span className="text-zinc-700 font-medium">Python</span>
+      </div>
+      <div className="flex items-center gap-3">
+        <Image
+          src="/Js.png"
+          alt="JavaScript"
+          width={55}
+          height={55}
+          className="object-contain hover:scale-105 transition-transform"
+        />
+        <span className="text-zinc-700 font-medium">JavaScript</span>
+      </div>
+      <div className="flex items-center gap-3">
+        <Image
+          src="/java.png"
+          alt="Java"
+          width={55}
+          height={55}
+          className="object-contain hover:scale-105 transition-transform"
+        />
+        <span className="text-zinc-700 font-medium">Java</span>
+      </div>
+      <div className="flex items-center gap-3">
+        <Image
+          src="/php.png"
+          alt="PHP"
+          width={55}
+          height={55}
+          className="object-contain hover:scale-105 transition-transform"
+        />
+        <span className="text-zinc-700 font-medium">PHP</span>
+      </div>
+      <div className="flex items-center gap-3">
+        <Image
+          src="/HTML-CSS.jpg"
+          alt="HTML & CSS"
+          width={55}
+          height={55}
+          className="object-contain hover:scale-105 transition-transform rounded-md"
+        />
+        <span className="text-zinc-700 font-medium">HTML & CSS</span>
+      </div>
     </div>
   </div>
 
